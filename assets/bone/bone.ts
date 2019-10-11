@@ -14,7 +14,7 @@ export default class NewClass extends cc.Component {
                 e.getLocation()
             );
 
-            let boneWorld = cc.v2(local.x + bone.getWorldX(), local.y + bone.getWorldY());
+            let boneWorld = cc.v2(local.x + bone.worldX, local.y + bone.worldY);
             let boneLocal = bone.worldToLocal(boneWorld);
             bone.x = boneLocal.x
             bone.y = boneLocal.y;
