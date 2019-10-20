@@ -6,6 +6,8 @@ export default class NewClass extends cc.Component {
     @property(sp.Skeleton)
     skeleton: sp.Skeleton = null;
 
+    _bone: any;
+
     onLoad() {
         let bone = this.skeleton.findBone('xian1');
 
@@ -14,10 +16,15 @@ export default class NewClass extends cc.Component {
                 e.getLocation()
             );
 
-            let boneWorld = cc.v2(local.x + bone.worldX, local.y + bone.worldY);
-            let boneLocal = bone.worldToLocal(boneWorld);
+            let boneLocal = bone.parent.worldToLocal(cc.v2(local.x, local.y));
             bone.x = boneLocal.x
             bone.y = boneLocal.y;
         });
+
+        this._bone = bone;
+    }
+
+    onSlide(slider) {
+        this._bone.rotation = slider.progress * 360;
     }
 }
