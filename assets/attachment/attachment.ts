@@ -38,13 +38,29 @@ export default class NewClass extends cc.Component {
     @property(sp.Skeleton)
     skeleton: sp.Skeleton = null;
 
+    _attachment: any;
+
+    _slot: any;
+
+    onLoad() {
+        this._attachment = this.skeleton.getAttachment('hz/maozi_zb', 'hz/yashemao');
+        this._slot = this.skeleton.findSlot('hz/maozi_zb');
+    }
+
     onClick() {
-        this.skeleton.setAttachment('hz/maozi_zb', 'hz/yashemao');
-        // let attach = this.skeleton.getAttachment('hz/maozi_zb', 'hz/yashemao');
-        let slot = this.skeleton.findSlot('hz/maozi_zb');
-        // slot.setAttachment(attach);
+        console.log('this._attachment.name', this._attachment.name)
+        this._slot.setAttachment(this._attachment);
         setTimeout(() => {
-            slot.setToSetupPose();
+            this._slot.setToSetupPose();
         }, 3000)
+    }
+
+    onRemove() {
+        this.skeleton.node.removeFromParent();
+        this.skeleton = null;
+    }
+
+    onGC() {
+        cc.sys.garbageCollect();
     }
 }

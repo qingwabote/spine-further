@@ -27,4 +27,13 @@ export default class NewClass extends cc.Component {
     onSlide(slider) {
         this._bone.rotation = slider.progress * 360;
     }
+
+    onRemove() {
+        this.skeleton.node.removeFromParent();
+        this.skeleton = null;
+    }
+
+    onGC() {
+        cc.sys.garbageCollect();
+    }
 }

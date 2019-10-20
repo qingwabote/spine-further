@@ -6,8 +6,22 @@ export default class NewClass extends cc.Component {
     @property(sp.Skeleton)
     skeleton: sp.Skeleton = null;
 
+    _trackEntry: any;
+
+    onLoad() {
+        this._trackEntry = this.skeleton.getCurrent(0);
+    }
+
     onSlide(slider) {
-        let trackEntry = this.skeleton.getCurrent(0);
-        trackEntry.trackTime = slider.progress * trackEntry.animationEnd;
+        this._trackEntry.trackTime = slider.progress * this._trackEntry.animationEnd;
+    }
+
+    onRemove() {
+        this.skeleton.node.removeFromParent();
+        this.skeleton = null;
+    }
+
+    onGC() {
+        cc.sys.garbageCollect();
     }
 }
