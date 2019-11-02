@@ -1,0 +1,139 @@
+
+long.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+long_st
+  rotate: false
+  xy: 2, 171
+  size: 901, 81
+  orig: 901, 81
+  offset: 0, 0
+  index: -1
+longtou_jiao
+  rotate: true
+  xy: 432, 92
+  size: 77, 86
+  orig: 77, 86
+  offset: 0, 0
+  index: -1
+longtou_jiao1
+  rotate: true
+  xy: 2, 23
+  size: 35, 69
+  orig: 35, 69
+  offset: 0, 0
+  index: -1
+longtou_mf1
+  rotate: false
+  xy: 363, 99
+  size: 60, 23
+  orig: 60, 23
+  offset: 0, 0
+  index: -1
+longtou_mf2
+  rotate: false
+  xy: 520, 134
+  size: 51, 35
+  orig: 51, 35
+  offset: 0, 0
+  index: -1
+longtou_mf3
+  rotate: false
+  xy: 573, 137
+  size: 44, 32
+  orig: 44, 32
+  offset: 0, 0
+  index: -1
+longtou_mf4
+  rotate: true
+  xy: 996, 196
+  size: 56, 26
+  orig: 56, 26
+  offset: 0, 0
+  index: -1
+longtou_mm1
+  rotate: true
+  xy: 2, 2
+  size: 19, 34
+  orig: 19, 34
+  offset: 0, 0
+  index: -1
+longtou_mm2
+  rotate: false
+  xy: 520, 102
+  size: 47, 30
+  orig: 47, 30
+  offset: 0, 0
+  index: -1
+longtou_x
+  rotate: true
+  xy: 297, 97
+  size: 25, 64
+  orig: 25, 64
+  offset: 0, 0
+  index: -1
+longtou_x1
+  rotate: false
+  xy: 297, 124
+  size: 133, 45
+  orig: 133, 45
+  offset: 0, 0
+  index: -1
+longtou_yd
+  rotate: false
+  xy: 97, 62
+  size: 22, 16
+  orig: 22, 16
+  offset: 0, 0
+  index: -1
+longtou_yz
+  rotate: false
+  xy: 996, 182
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+longtou_z_s
+  rotate: false
+  xy: 202, 80
+  size: 93, 89
+  orig: 93, 89
+  offset: 0, 0
+  index: -1
+longtou_z_x
+  rotate: false
+  xy: 97, 80
+  size: 103, 89
+  orig: 103, 89
+  offset: 0, 0
+  index: -1
+longzha1
+  rotate: false
+  xy: 2, 60
+  size: 93, 109
+  orig: 93, 109
+  offset: 0, 0
+  index: -1
+longzha2
+  rotate: false
+  xy: 2, 60
+  size: 93, 109
+  orig: 93, 109
+  offset: 0, 0
+  index: -1
+longzha3
+  rotate: true
+  xy: 905, 164
+  size: 88, 89
+  orig: 88, 89
+  offset: 0, 0
+  index: -1
+longzha4
+  rotate: true
+  xy: 905, 164
+  size: 88, 89
+  orig: 88, 89
+  offset: 0, 0
+  index: -1
